@@ -26,35 +26,35 @@
 /* Add parallax effect to certain sections */
 /* Adjust the background images for each section */
 #introduction {
-  background-image: url('introduction-bg.jpg');
+  background-image: url('introduction-bg.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
 #portfolio {
-  background-image: url('portfolio-bg.jpg');
+  background-image: url('portfolio-bg.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
 #skills {
-  background-image: url('skills-bg.jpg');
+  background-image: url('skills-bg.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
 #testimonials {
-  background-image: url('testimonials-bg.jpg');
+  background-image: url('testimonials-bg.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
 #about {
-  background-image: url('about-bg.jpg');
+  background-image: url('about-bg.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -62,7 +62,7 @@
 }
 
 #contact {
-  background-image: url('contact-bg.jpg');
+  background-image: url('contact-bg.webp');
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
