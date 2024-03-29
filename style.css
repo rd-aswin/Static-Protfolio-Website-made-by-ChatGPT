@@ -1,0 +1,133 @@
+/* Define CSS custom properties for colors */
+:root {
+  --primary-color: #4f46e5;
+  --primary-color-dark: #4338ca;
+}
+
+/* Use CSS custom properties for colors */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.link-primary {
+  color: var(--primary-color);
+}
+
+.link-primary:hover {
+  color: var(--primary-color-dark);
+}
+
+
+/* Add parallax effect to certain sections */
+/* Adjust the background images for each section */
+#introduction {
+  background-image: url('introduction-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#portfolio {
+  background-image: url('portfolio-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#skills {
+  background-image: url('skills-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#testimonials {
+  background-image: url('testimonials-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#about {
+  background-image: url('about-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 10rem;
+}
+
+#contact {
+  background-image: url('contact-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding-bottom: 50vh; /* Adjust padding to ensure content is not hidden behind footer */
+}
+
+/* New CSS to fix auto-snapping issue */
+#spacer {
+  margin-top: -1px; /* Adjust the negative margin to match your header height */
+}
+
+@media (max-width: 768px) {
+  #spacer {
+      display: none; /* Hide spacer on mobile screens */
+  }
+}
+
+
+/* Vibrant colors and typography */
+/* Update colors for buttons and links */
+.btn-primary {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.link-primary {
+  color: #4f46e5;
+}
+
+.link-primary:hover {
+  color: #4338ca;
+}
+
+/* Update typography for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #fff;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+}
+

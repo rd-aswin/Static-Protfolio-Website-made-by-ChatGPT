@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-900 text-white">
+  
+  <header class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2" />
+        <span class="text-xl font-semibold">Aswin</span>
+      </div>
+      <nav class="hidden md:block">
+        <ul class="flex space-x-4">
+          <li><a href="#introduction" class="hover:text-gray-300 nav-link">Home</a></li>
+          <li><a href="#portfolio" class="hover:text-gray-300 nav-link">Portfolio</a></li>
+          <li><a href="#about" class="hover:text-gray-300 nav-link">About</a></li>
+          <li><a href="#contact" class="hover:text-gray-300 nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="toggleMenu" class="md:hidden block">
+        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+          <path fill-rule="evenodd"
+            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+          </path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobileMenu" class="md:hidden bg-gray-800 py-2">
+      <ul class="text-center">
+        <li>
+          <a href="#introduction" class="block py-2 px-4 text-white hover:bg-gray-700 nav-link">Home</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="block py-2 px-4 text-white hover:bg-gray-700 nav-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#about" class="block py-2 px-4 text-white hover:bg-gray-700 nav-link">About</a>
+        </li>
+        <li>
+          <a href="#contact" class="block py-2 px-4 text-white hover:bg-gray-700 nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section id="introduction" class="bg-gray-900 text-white py-20 bg-cover bg-center">
+    <div class="container mx-auto flex flex-col items-center justify-center">
+      <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
+      <p class="text-lg text-center mb-8">
+        I'm Aswin, a passionate web developer dedicated to creating beautiful
+        and functional websites.
+      </p>
+      <button id="explore-btn"
+        class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+        Explore More
+      </button>
+    </div>
+  </section>
+
+  <section id="portfolio" class="bg-gray-900 text-white py-20 bg-cover bg-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Portfolio Showcase</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="portfolio-item">
+          <img src="portfolio-item1.jpg" alt="Portfolio Item 1" class="w-full h-auto rounded" />
+          <h3 class="text-lg font-semibold mt-4">Project Title 1</h3>
+          <p class="text-sm mt-2">Description of project 1</p>
+        </div>
+        <div class="portfolio-item">
+          <img src="portfolio-item2.jpg" alt="Portfolio Item 2" class="w-full h-auto rounded" />
+          <h3 class="text-lg font-semibold mt-4">Project Title 2</h3>
+          <p class="text-sm mt-2">Description of project 2</p>
+        </div>
+        <!-- Add more portfolio items as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-gray-900 text-white py-20 bg-cover bg-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5 text-5xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mt-4">HTML</h3>
+          <div class="skill-bar bg-gray-700 h-4 rounded-full mt-2">
+            <div id="html-skill" class="html-skill bg-blue-500 h-full rounded-full"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5 text-5xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mt-4">CSS</h3>
+          <div class="skill-bar bg-gray-700 h-4 rounded-full mt-2">
+            <div id="html-skill" class="html-skill bg-red-500 h-full rounded-full"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5 text-5xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mt-4">Javascript</h3>
+          <div class="skill-bar bg-gray-700 h-4 rounded-full mt-2">
+            <div id="html-skill" class="html-skill bg-yellow-500 h-full rounded-full"></div>
+          </div>
+        </div>
+        <!-- Add more skills cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="bg-gray-900 text-white py-20 bg-cover bg-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Testimonials</h2>
+      <div id="testimonial-slider" class="relative">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-slide absolute top-0 left-0 w-full h-full opacity-0 transition-all duration-500">
+          <div class="max-w-lg mx-auto px-4 py-8 bg-gray-800 rounded-lg shadow-lg">
+            <p class="text-lg mb-4">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer posuere erat a ante."
+            </p>
+            <p class="text-sm">- John Doe</p>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial-slide absolute top-0 left-0 w-full h-full opacity-0 transition-all duration-500">
+          <div class="max-w-lg mx-auto px-4 py-8 bg-gray-800 rounded-lg shadow-lg">
+            <p class="text-lg mb-4">
+              "Vestibulum id ligula porta felis euismod semper. Maecenas
+              faucibus mollis interdum."
+            </p>
+            <p class="text-sm">- Jane Smith</p>
+          </div>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-gray-900 text-white py-20 bg-cover bg-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+      <div class="max-w-3xl mx-auto">
+        <p class="text-lg leading-relaxed mb-8">
+          I'm a passionate web developer with years of experience in creating
+          responsive and user-friendly websites. My expertise lies in HTML,
+          CSS, JavaScript, and various web development frameworks.
+        </p>
+        <div class="hidden" id="more-about">
+          <p class="text-lg leading-relaxed mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+            nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+            Nulla quis sem at nibh elementum imperdiet.
+          </p>
+          <p class="text-lg leading-relaxed mb-8">
+            Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet
+            imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non,
+            auctor et, hendrerit quis, nisi.
+          </p>
+        </div>
+        <button id="toggle-about"
+          class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+          Read More
+        </button>
+      </div>
+    </div>
+  </section>
+  <div id="spacer" class="hidden md:block h-20"></div>
+
+  <section id="contact" class="bg-gray-900 text-white py-20 bg-cover bg-center">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+      <div class="max-w-lg mx-auto">
+        <form id="contact-form" class="mb-8">
+          <div class="mb-4">
+            <label for="name" class="block text-lg">Name</label>
+            <input type="text" id="name" name="name"
+              class="w-full bg-gray-800 text-white border border-gray-700 rounded py-2 px-3 focus:outline-none focus:border-blue-500"
+              required />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-lg">Email</label>
+            <input type="email" id="email" name="email"
+              class="w-full bg-gray-800 text-white border border-gray-700 rounded py-2 px-3 focus:outline-none focus:border-blue-500"
+              required />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-lg">Message</label>
+            <textarea id="message" name="message" rows="4"
+              class="w-full bg-gray-800 text-white border border-gray-700 rounded py-2 px-3 focus:outline-none focus:border-blue-500"
+              required></textarea>
+          </div>
+          <button type="submit"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+            Send Message
+          </button>
+        </form>
+        <div id="response-message" class="hidden bg-green-500 text-white py-2 px-4 rounded-full"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto flex justify-between items-center">
+      <p class="text-lg">© 2024 Aswin. All rights reserved.</p>
+      <div class="flex space-x-4">
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
